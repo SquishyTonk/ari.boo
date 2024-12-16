@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
+
+body:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#hero {
+    display: inline-block;
+    vertical-align: middle;
+    left: 0;
+    margin: -20px 0 0 10vw;
+    padding: 0;
+    width: 60%;
+}
+
+#hero h1 {
+    text-align: left;
+    font-weight: 300;
+    font-size: 42pt;
+    margin: 0;
+}
+
+#hero #dumb {
+    font-weight: 200;
+    font-size: 26pt;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#dumb-word {
+    opacity: 0;
+    animation: fade-in ease-in 1;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20vh 0 20vh 0;
+    padding: 0;
+    width: 40%;
+    text-align: right;
+}
+
+.link {
+    height: 20vh;
+}
+
+.link:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.link a {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(240, 244, 249);
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.link a:hover,
+.link a:focus {
+    background-color: rgb(213, 220, 227);
+    width: 52%;
+}
+
+@media (max-width: 1000px) {
+    #hero h1 {
+        font-size: 32pt;
+    }
+
+    #hero #dumb {
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 720px ) or (orientation: portrait) {
+    #hero {
+        display: block;
+        position: fixed;
+        top: 0;
+        margin: 20vh 0 0 0;
+        width: 100%;
+    }
+
+    #hero h1 {
+        text-align: center;
+    }
+
+    #links {
+        display: block;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        height: 60vh;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .link a {
+        text-align: center;
+        border-radius: 10px;
+    }
+}
