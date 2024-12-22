@@ -7,24 +7,16 @@ var words = [
     "stupid",
     "silly",
     "smooth brained",
-    "lamebrained",
     "idiotic",
     "goofy ahhh",
     "dense",
     "moronic",
     "dim-witted",
-    "half-witted",
-    "slow-witted",
-    "brainless",
-    "mindless",
+    "slow",
     "boneheaded",
     "airheaded",
-    "empty-headed",
     "obtuse",
-    "hard of thinking",
     "asinine",
-    "uhhh... unsmart?",
-    "addlepated",
     "dopey",
     "birdbrained",
     "vacuous",
@@ -36,7 +28,6 @@ var words = [
     "daft",
     "clueless",
     "doltish",
-    "ineffectual"
 ]
 
 document.addEventListener("DOMContentLoaded", function() { 
