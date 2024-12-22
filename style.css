@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
-
 body {
     background-color: white;
     color: black;
@@ -84,6 +83,7 @@ nav li a {
 
 .content p {
     font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
     font-weight: 300;
     padding: 0;
     padding-bottom: 1rem;
@@ -108,3 +108,17 @@ hr {
     border: none;
     border-bottom: 1px solid rgb(213, 220, 227);
 }
+
+/*
+@media screen and (orientation:landscape) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .desktop-only {
+        display: none !important;
+    }
+}
+*/
