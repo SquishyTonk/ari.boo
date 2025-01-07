@@ -118,7 +118,15 @@ hr {
 
 @media (min-width: 601px) and (not (pointer: coarse)) and (not (pointer: none)) {
     .mobile-only {
-        display: none !important;
+        display: none;
+    }
+
+    nav #navigation {
+        display: inline !important;
+    }
+
+    body {
+        overflow-y: auto;
     }
 }
 
