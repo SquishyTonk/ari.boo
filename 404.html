@@ -2,7 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Ari's Site | Error 404</title>
+        <script src="script.js"></script>
     </head>
     <body>
         <section id="site-width-maxer">
@@ -10,17 +12,23 @@
                 <div class="left-inline">
                     <a class="logo-title" href="/">Ari's Site</a>
                 </div>
-                <div class="right-inline">
+                <div class="right-inline mobile-only">
+                    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                </div>
+                <div class="right-inline desktop-only" id="navigation">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="projects.ari.boo">Projects</a></li>
-                        <li><a href="blog.ari.boo">Blog</a></li>
+                        <li><a href="https://projects.ari.boo">Projects</a></li>
+                        <li><a href="https://blog.ari.boo">Blog</a></li>
                         <li><a href="/other">Other Stuffs</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="content">
-                <h1 class="title">404</h1>
+                <h1>404</h1>
+                <hr>
                 <section id="error404">
                     <h2>Page not found</h2>
                     <p>The page you are looking for does not exist. Check that the URL is correct and try again.</p>
